@@ -1,0 +1,169 @@
+/* Write some CSS below */
+body {
+    font-family: Overpass;
+    color: #404042;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  h1, h2, h3 {
+    font-family: Chivo;
+  }
+  
+  a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  a:hover {
+    color: #b91717;
+  }
+
+  p {
+    color: #404042;
+    opacity: .7;
+  }
+  
+  .container {
+    width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .banner {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    text-align: center;
+  }
+  
+  .banner h1 {
+    color: white;
+    font-size: 45px;
+    margin: 0;
+  }
+  
+  .banner p {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .button-blue {
+    background-color: #e31a1a;
+    color: white;
+    padding: 16px 48px;
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  .button-blue:hover {
+    background-color: #0d3ec6;
+    color: white;
+  }
+  
+  .card-white {
+    background: white;
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    width: auto;
+    text-align: center;
+    padding: 24px;
+    margin: 8px;
+  }
+  
+  .card-white img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .card-white h3 {
+    margin-bottom: 0;
+  }
+  
+  .footer {
+    background: #404042;
+    text-align: left;
+    left:1px;
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: unset;
+    grid-template-rows: auto;
+    text-align: center;   
+  }
+  
+  .footer p {
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .footer .image-end {
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+    place-self: center;
+  }
+
+  .footer .image-social {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+  }
+
+  .image-end {
+    width: 50px;
+    height: 50px;
+    position: center;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
+    
+  /* Container media queries */
+  @media (min-width: 500px) {
+    .container {
+      width: 400px;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .container {
+      width: 600px;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card-white {
+        width: 200px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: unset;
+    }
+
+    .footer .image-end {
+        place-content: end;
+    }
+    .container {
+      width: 800px;
+    }
+  }
+
+
+
+ 
